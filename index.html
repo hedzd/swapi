@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Starwars</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/index.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="box in" id="movies">
+				<h1>Movies</h1>
+				<div>
+					<ul id="movies_list"></ul>
+				</div>
+			</div>
+			<div class="box column out" id="starships">
+				<div class="column">
+					<h1>Starships</h1>
+					<ul id="starship_list"></ul>
+					<div>
+						<div class="page-control">
+							<a id="prev_page" class="link">Prev</a>
+							<a>Page-<span id="page"></span></a>
+							<a id="next_page" class="link">Next</a>
+						</div>
+						<a id="back" class="link">Back to Movies</a>
+					</div>
+				</div>
+				<div class="column">
+					<h1 id="starship_name"></h1>
+					<ul id="starship_info">
+						<li id="starship_name2"></li>
+						<li id="starship_model"></li>
+						<li id="starship_manufacturer"></li>
+						<li id="starship_crew"></li>
+						<li id="starship_passengers"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="./js/index.js"></script>
+	</body>
+</html>

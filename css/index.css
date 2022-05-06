@@ -1,0 +1,117 @@
+/*
+    Changes font of whole html file
+*/
+html {
+	font-family: "PT Sans", sans-serif;
+}
+
+/*
+    Adds background to body in `cover` format
+*/
+body {
+	background: url("../img/background.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+/*
+    This is the main container for all elements
+*/
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	position: relative;
+}
+
+/*
+    Main box
+*/
+.box {
+	position: absolute;
+	width: 600px;
+	background-color: #fff;
+	border-radius: 10px;
+	opacity: 0.75;
+	padding: 10px 20px;
+}
+
+/*
+	‌Box style when it's visible
+*/
+.box.in {
+	visibility: visible;
+	opacity: 0.75;
+	transition: visibility 0s linear 0s, opacity 300ms;
+}
+
+/*
+	‌Box style when it's hidden
+*/
+.box.out {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+/*
+	List of movies (every element)
+*/
+#movies_list li {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 0;
+}
+
+/*
+	Box double column format (list and details of starships)
+*/
+.box.column {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+/*
+	List of starships details
+*/
+#starship_info li {
+	list-style: none;
+	padding: 5px 0;
+}
+
+/*
+	‌Section which handles pagination for starships
+*/
+.page-control {
+	display: flex;
+	justify-content: space-around;
+}
+
+/*
+	‌Back To Movies button
+*/
+#back {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+}
+
+/*
+	Style for every link in the app
+*/
+.link {
+	text-decoration: underline;
+	color: green;
+	cursor: pointer;
+}
+
+/*
+	List of starships (every element)
+*/
+#starship_list li {
+	list-style: none;
+	padding: 5px 0;
+}
